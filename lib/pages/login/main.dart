@@ -11,6 +11,7 @@ void main() {
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
