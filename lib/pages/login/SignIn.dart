@@ -1,14 +1,15 @@
+import 'package:bendemistimm/pages/login/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: HomePage(),
+    home: SignIn(),
   ));
 }
 
-class HomePage extends StatelessWidget {
+class SignIn extends StatelessWidget {
   String username;
   String password;
   final _formKey = GlobalKey<FormState>();
@@ -158,7 +159,7 @@ class HomePage extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => HomePage()));
+                                          builder: (context) => SignUp()));
                                 } else {
                                   showDialog(
                                       context: context,
